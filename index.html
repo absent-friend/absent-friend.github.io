@@ -1,0 +1,32 @@
+<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>
+absenthelper command reference
+
+*****
+
+>!splits <comparison\>
+
+Gives the final time for the currently active splits in LiveSplit, for the given comparison. Use the following shorthands for the <comparison\> argument:
++ pb (Personal Best)
++ best (Best Segments)
++ bestsplits (Best Split Times)
++ average (Average Segments)
++ median (Median Segments)
++ worst (Worst Segments)
++ balanced (Balanced PB)
++ latest (Latest Run)
+and one useless one that will go unnamed. (can you guess what it is?)
+
+For example, type "!splits pb" to get my personal best.
+
+Troubleshooting:
++ "X is not a shorthand for any known comparison." --- You may have a typo in the shorthand for the comparison you want to see.
++ "The X comparison is not currently active." --- I haven't activated this comparison in my LiveSplit settings. Sorry.
++ "LiveSplit Server isn't running at the moment." --- I either don't have LiveSplit open, or I forgot to start the LiveSplit Server component. The latter is an error on my part, the former probably isn't. Please discern before complaining.
+
+>!spotify <command\>
+
+There are a couple options for the "command" argument currently:
++ current --- Get the name of the currently playing track.
++ previous --- Get the name of the previously played track.
+
+Note that if you have significant delay or use one of these commands right as the track is changing, the answer you get might be incorrect. There's also a minor quirk where Spotify doesn't save recently played track info if the track is a local file on my computer. If the track name that it gives seems incorrect, don't hesitate to ask me about it and I'll try to give you the right answer.
