@@ -1,32 +1,57 @@
-<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>
-# absenthelper command reference
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>absent friend</title>
+    <link rel="preload" href="https://unpkg.com/modern-normalize@3.0.1/modern-normalize.css" as="style"/>
+    <link rel="stylesheet" href="https://unpkg.com/modern-normalize@3.0.1/modern-normalize.css"/>
+    <style>
+      body {
+        background-color: #d7c9ff;
+        /* color: #021507; */
+        color: #162c1c;
+        --border-color: #4a4753;
+      }
 
-*****
+      header, main {
+        padding-inline: 1rem;
+      }
 
-## !splits <comparison\>
+      header {
+        border-bottom: 1px solid var(--border-color);
+      }
 
-Gives the final time for the currently active splits in LiveSplit, for the given comparison. Use the following shorthands for the <comparison\> argument:
-+ pb (Personal Best)
-+ best (Best Segments)
-+ bestsplits (Best Split Times)
-+ average (Average Segments)
-+ median (Median Segments)
-+ worst (Worst Segments)
-+ balanced (Balanced PB)
-+ latest (Latest Run)
-and one useless one that will go unnamed. (can you guess what it is?)
+      a {
+        color: currentColor;
+        font-weight: bolder;
+      }
 
-For example, type "!splits pb" to get my personal best.
+      ul {
+        list-style-type: circle;
+      }
 
-Troubleshooting:
-+ "X is not a shorthand for any known comparison." --- You may have a typo in the shorthand for the comparison you want to see.
-+ "The X comparison is not currently active." --- I haven't activated this comparison in my LiveSplit settings. Sorry.
-+ "LiveSplit Server isn't running at the moment." --- I either don't have LiveSplit open, or I forgot to start the LiveSplit Server component. The latter is an error on my part, the former probably isn't. Please discern before complaining.
-
-## !spotify <command\>
-
-There are a couple options for the "command" argument currently:
-+ current --- Get the name of the currently playing track.
-+ previous --- Get the name of the previously played track.
-
-Note that if you have significant delay or use one of these commands right as the track is changing, the answer you get might be incorrect. There's also a minor quirk where Spotify doesn't save recently played track info if the track is a local file on my computer. If the track name that it gives seems incorrect, don't hesitate to ask me about it and I'll try to give you the right answer.
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #40335c;
+          color: #dcf7e1;
+          --border-color: #c0bdcb;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>absent friend</h1></header>
+    <main>
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="/kill-the-sorceress">Kill the Sorceress!</a> - A comprehensive guide to the first Sorceress fight in Spyro: Year of the Dragon. Adapted from JeremyThompson's original tutorial.</li>
+      </ul>
+      <h2>Other places you can find me:</h2>
+      <ul>
+        <li><a href="https://github.com/absent-friend/">GitHub</a></li>
+        <li><a href="https://www.speedrun.com/users/absentfriend">speedrun.com</a></li>
+        <li><a href="https://www.twitch.tv/absentfriend">Twitch</a></li>
+        <li><b>Discord:</b> absentfriend.</li>
+      </ul>
+    </main>
+  </body>
+</html>
